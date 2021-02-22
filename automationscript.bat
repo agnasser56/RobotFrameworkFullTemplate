@@ -1,0 +1,1 @@
+pabot --listener ./Automation/Listeners/executionListener.py ./Automation/Scenarios
