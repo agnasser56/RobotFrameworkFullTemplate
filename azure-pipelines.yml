@@ -27,4 +27,4 @@ steps:
     pip install robotframework robotframework-seleniumlibrary RESTInstance robotframework-jsonlibrary
   displayName: 'Install RF and Libraries'
 
-- powershell: robot -d results ./Scenarios/E2E_APIScenarios.robot
+- powershell: robot -d results -i TEST009 ./Scenarios/E2E_APIScenarios.robot
