@@ -24,7 +24,7 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
-    pip install robot-framework robotframework-seleniumlibrary RESTInstance robotframework-jsonlibrary
+    pip install robotframework robotframework-seleniumlibrary RESTInstance robotframework-jsonlibrary
   displayName: 'Install RF and Libraries'
 
 - powershell: robot -d results ./Scenarios/E2E_APIScenarios.robot
