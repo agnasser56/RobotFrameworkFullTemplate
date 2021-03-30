@@ -5,7 +5,7 @@ Library     OperatingSystem
 Resource   ${CURDIR}/../Common/CommonWeb.robot
 Resource   ../TestData/TestData.robot
 Resource   ../APIs/IssuesAPIs.robot
-
+Resource   ../APIs/ToDo.robot
 
 *** Variables ***
 
@@ -29,3 +29,8 @@ Verify Issues Scenarios Chained
     Verify Get Issue Details By ID     ${IssueDetails4}
     ${IssueDetails5.IssueId} =  Set Variable    ${issueID}
     Verify Close Issue     ${IssueDetails5}
+
+
+Verify Get To Do Item
+    [Tags]  api  TEST009
+    Verify Get To Do Item
